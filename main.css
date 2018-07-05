@@ -2,20 +2,71 @@ body {
   background-image: url("https://previews.123rf.com/images/tanyushka81/tanyushka811707/tanyushka81170700020/81570322-fleur-de-lis-seamless-pattern-vector-illustration-black-white-template-floral-texture-elegant-decora.jpg");
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat.ttf) format('truetype');
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#navigation {
+  /* background-color: #161932; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.links, .gallery-header {
+  font-family: "Montserrat";
+  color: 9EC6D5;
+}
+
+ul>li {
+  display: inline;
+  padding: 50px;
+}
+
+a {
+  font-family: 'Dancing Script', cursive;
+  color: #9EC6D5;
+  text-decoration: none;
+}
+
 .flex-container {
   display: flex;
-  justify-content:center;
-
+  justify-content: center;
   /* background-color: #D4AF37; */
 }
+
 h1 {
   color: #D4AF37;
 }
+
 #heart {
   position: relative;
   height: 170px;
   width: 200px;
   margin: 20px;
+}
+p {
+  font-family: 'Dancing Script', cursive;
+
+}
+
+.content{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin: 0px;
+    width: 700px;
+    color: #FF69B4;
 }
 
 #heart::before, #heart::after {
@@ -24,7 +75,7 @@ h1 {
   top: 5px;
   width: 100px;
   height: 160px;
-  background: pink;
+  background: #FF69B4;
   border-radius: 50px 50px 0 0;
 }
 

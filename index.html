@@ -3,27 +3,99 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+
   <title>Happy Paper Co</title>
   <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
-  <div class="flex-container">
-    <div id="#we" class="slogun">
-      <h1 id="firstH">We</h1>
-    </div>
-
-    <div id="heart">
+  <header>
+    <div class="container">
 
     </div>
+    <div id="navigation">
+      <div class="nav-bar">
+        <img class="home-button">
+      </div>
+      <nav>
+        <ul class="links">
+          <li><a href="#cause">Because Paper</a></li>
+          <li><a href="#gallery">Kinds of Paper</a></li>
+          <li><a href="#action">How May We Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="container">
+    <div class="flex-container">
+      <div id="#we" class="slogun">
+        <h1 id="firstH">We</h1>
+      </div>
 
-    <div id="secondH" class="">
-      <h1 id="paper"> Paper</h1>
+      <div id="heart">
+
+      </div>
+
+      <div id="secondH" class="">
+        <h1 id="paper"> Paper</h1>
+
+      </div>
 
     </div>
-
+      <div id="cause">
+          <div class="cause-article">
+              <div class="header">
+                  <h1>CAUSE</h1>
+              </div>
+              <div class="content">
+                  <p>More than 70% of the world is covered by water. Our oceans are home to the majority of life on our planet yet it is severely affected by pollution that comes from the land. Every year, marine life are affected by harmful substances, such as oil and plastic. We need to be more active in fighting to protect our oceans and ocean friends!</p>
+              </div>
+          </div>
+          <div class="images">
+              <img src="data:image/jpeg;base64,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">
+          </div>
+      </div>
+      <div id="gallery">
+          <div class="gallery-header">
+              <h1>Kinds of Paper</h1>
+          </div>
+          <div class="images">
+              <img src="https://www.pexels.com/photo/creased-crinkled-crumpled-crumpled-paper-479444/">
+              <img src="https://www.pexels.com/photo/arrangement-coffee-cup-cup-of-coffee-407233/">
+              <img src="https://www.pexels.com/photo/white-stacked-worksheets-on-table-51191/">
+              <img src="https://www.pexels.com/photo/white-paper-with-people-diagram-print-900108/">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB2lzhsCPVpOE6XpjQmDn8amrnnrsrNgUmzJUyzjqWL3gto7XG">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJf5emSgEl9_18ToKWmcSkOf3yk8dZKFFM7IQM-KFc83Uiop2O">
+          </div>
+      </div>
+      <div id="action">
+          <div class="action-article">
+              <div class="header">
+                  <h1> Save Paper</h1>
+              </div>
+              <div class="content">
+                  To limit our impact,
+                      <ol>
+                          <li>Carry a reusable water bottle</li>
+                          <li>Store food in non-disposable containers</li>
+                          <li>Bring your own cloth tote or other reusable bag when shopping</li>
+                          <li>Recycle whenever possible</li>
+                      </ol>
+              </div>
+          </div>
+          <div class="images">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0fDK025qClJ9uF4l-JUcTUVWz3f1ACX5zJVoBOGwzIHulKfq6" alt="paper">
+          </div>
+      </div>
   </div>
 
+
+  <header>
+    <h1>Welcome to the Paper Company</h1>
+    <h2>We got paper:</h2>
+  </header>
+  </div>
   <script type="text/javascript" src="script.js">
   </script>
 </body>
