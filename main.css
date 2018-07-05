@@ -60,7 +60,11 @@ p {
   font-family: 'Dancing Script', cursive;
 
 }
-
+img {
+    height: 300px;
+    width: auto;
+    border: 5px solid #9EC6D5;}
+    
 .content{
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
