@@ -1,0 +1,45 @@
+body {
+  background-image: url("https://previews.123rf.com/images/tanyushka81/tanyushka811707/tanyushka81170700020/81570322-fleur-de-lis-seamless-pattern-vector-illustration-black-white-template-floral-texture-elegant-decora.jpg");
+}
+
+.flex-container {
+  display: flex;
+  justify-content:center;
+
+  /* background-color: #D4AF37; */
+}
+h1 {
+  color: #D4AF37;
+}
+#heart {
+  position: relative;
+  height: 170px;
+  width: 200px;
+  margin: 20px;
+}
+
+#heart::before, #heart::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  width: 100px;
+  height: 160px;
+  background: pink;
+  border-radius: 50px 50px 0 0;
+}
+
+#heart::before {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  left: 100px;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+
+#heart::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  left: 0;
+  -webkit-transform-origin: 100% 100%;
+  transform-origin: 100% 100%;
+}
